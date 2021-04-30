@@ -1,0 +1,60 @@
+.modal {
+    position: fixed;
+    top: 10vh;
+    bottom: 10vh;
+    z-index: 100;
+    /* as width of Card = 500px and modal class is used in conjunction of that */
+    left: calc(50% - 250px);
+    /* margin: auto 0; */
+    overflow: scroll;
+    background: cadetblue;
+}
+
+.header {
+    text-align: center;
+    color: black;
+    user-select: none;
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 40px;
+}
+
+.header h2 {
+    margin: 0;
+    color: black;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.content {
+    padding: 0 1rem;
+}
+
+.actions {
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.actions-at-middle {
+    justify-content: center;
+}
+
+.actions>* {
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .modal {
+        left: 15px;
+        right: 15px;
+
+        width: calc(100% - 30px);
+    }
+
+    .actions>* {
+        margin: 5px 0;
+        flex: 1 1 100%;
+    }
+}

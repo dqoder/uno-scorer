@@ -1,0 +1,32 @@
+.new-player-form {
+    display: flex;
+    padding: 10px;
+}
+
+.new-player-form>label {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.new-player-form>input {
+    margin-left: auto;
+}
+
+.new-player-form>* {
+    margin-left: 10px;
+}
+
+@media screen and (max-width :600px) {
+    .new-player-form>label {
+        display: none;
+    }
+
+    .new-player-form>input {
+        width: 100%;
+    }
+}

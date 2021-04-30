@@ -1,0 +1,24 @@
+.CardStruct {
+    background: yellow;
+    border-radius: 10px;
+
+    display: inline-block;
+    width: min(400px, 95%);
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    /* margin-left: 10px; */
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    border: 2px solid yellow;
+    list-style: none;
+    height: 150px;
+
+    position: relative;
+}
+
+.CardStruct::-webkit-scrollbar {
+    width: 5px;
+}

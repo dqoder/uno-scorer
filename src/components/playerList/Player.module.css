@@ -1,0 +1,62 @@
+.PlayerListStruct {
+    list-style: none;
+    /* background: crimson; */
+    padding: 0;
+}
+
+
+.PlayerStruct {
+    background: rgb(255, 242, 53);
+    text-align: center;
+    margin: 15px 0;
+    width: 100;
+    padding: 15px 10px;
+    border-radius: 10px;
+    user-select: none;
+    box-shadow: 0 0 5px 0px rgb(65, 64, 61);
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+/* ----------------------------- */
+
+.MovableListElem {
+    cursor: grab;
+}
+
+.MovableListElem:hover,
+.MovableListElem:focus {
+    filter: brightness(0.85);
+    box-shadow: 0 0 10px 1px gray;
+    transition: filter 250ms ease, box-shadow 250 ms ease;
+}
+
+.MovableListElem:active {
+    transform: scale(0.95);
+    transition: transform 100ms ease-out;
+}
+
+/* ----------------------------- */
+
+.for-game-over {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.for-game-over>* {
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+    text-overflow: ellipsis;
+
+}
+
+.for-game-over>div:last-child {
+    flex: 0 0 3rem;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: end;
+}

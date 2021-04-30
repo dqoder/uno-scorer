@@ -1,0 +1,19 @@
+.card {
+    padding: 10px;
+    background: transparent;
+    box-shadow: 0px 0px 7px 1px black;
+    border-radius: 15px;
+    width: min(500px, 100%);
+    margin: 15px auto;
+    background-color: rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    .card {
+        margin: 20px auto;
+        width: 92%;
+    }
+}

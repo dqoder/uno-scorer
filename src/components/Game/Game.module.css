@@ -1,0 +1,34 @@
+.Label {
+    display: block;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+}
+
+.selectCard {
+    outline: none;
+    border: none;
+    display: block;
+    border-radius: 0;
+    border-bottom: 3px solid rgb(0, 145, 0);
+    width: min(85%, 250px);
+    font-size: large;
+    background: transparent;
+    margin: 25px auto;
+    cursor: pointer;
+}
+
+
+.selectCard:hover,
+.selectCard:focus {
+    /* background-color: aliceblue; */
+    border-width: 3px;
+}
+
+
+.selectCard>option {
+    filter: brightness(2);
+    background-color: skyblue;
+}

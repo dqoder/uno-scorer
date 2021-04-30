@@ -1,0 +1,74 @@
+.Button {
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 5px 10px;
+    background: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    height: 100%;
+    user-select: none;
+}
+
+
+.Button:hover,
+.Button:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 100ms ease-out;
+}
+
+.Button:active {
+    transform: scale(1.03);
+}
+
+button:disabled {
+    border-color: rgba(0, 0, 0, 0.4);
+    cursor: not-allowed;
+    filter: brightness(0.8);
+}
+
+button:disabled:hover,
+button:disabled:focus {
+    transition: none;
+    border-color: rgba(0, 0, 0, 0.4);
+    box-shadow: none;
+}
+
+/* ADD BUTTON styles */
+
+.AddBtn {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    height: 100%;
+    user-select: none;
+    outline: none;
+}
+
+.AddBtn:hover,
+.AddBtn:active {
+    filter: brightness(0.95)
+}
+
+.AddBtn:disabled {
+    filter: brightness(0.8);
+}
+
+.AddBtn:active {
+    transform: scale(1.03);
+}
+
+.begin-button {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background: limegreen;
+    text-transform: capitalize;
+}
