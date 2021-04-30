@@ -12,6 +12,8 @@ import styled from 'styled-components'
 
 const TableContainer = styled.div`
     overflow:hidden;
+    // font-family:monospace;
+    margin-bottom: 20px;
     &>table{
         margin: auto;
         border-collapse: collapse;
@@ -29,7 +31,7 @@ const TableContainer = styled.div`
 
     &>table th:last-child{
         border-top-left-radius: 0px;
-        border-top-right-radius: 10px ;
+        border-top-right-radius: 10px ;        
     }
 
     &>table > tbody{
@@ -41,9 +43,19 @@ const TableContainer = styled.div`
         background: greenyellow;
     }
 
-
+    &>table td:last-child{
+        text-align: right;
+        font-weight: bold;
+    }
 `
 
+const Container = styled.div`
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family:monospace;
+`
 
 
 
@@ -193,6 +205,9 @@ export default function Game(props) {
             { ReactDOM.createPortal(<OptionRight onClick={informAppJs('ROUND_OVER')}>Round Over</OptionRight>, document.getElementById('menu'))}
 
             <Card>
+                <Container>
+                    Score table
+                </Container>
                 <TableContainer>
                     <table >
                         <thead>
@@ -214,12 +229,10 @@ export default function Game(props) {
                     </table>
                 </TableContainer>
             </Card>
-            {
-                <Card>
-                    {Select}
-                    {<Button style={buttonStyle} onClick={updateScoreAndTurn}>Select</Button>}
-                </Card>
-            }
+            <Card>
+                {Select}
+                {<Button style={buttonStyle} onClick={updateScoreAndTurn}>Select</Button>}
+            </Card>
         </>
     )
 }
